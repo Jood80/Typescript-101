@@ -21,7 +21,7 @@ class Member extends User {
         this.id = id;
     }
     payInvoice() {
-        super.payInvoice;
+        super.payInvoice();
     }
 }
 let Nujood = new User("Nujood Kadhem", "hfdkjdk@gmail.com", 50);

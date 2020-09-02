@@ -2,8 +2,8 @@ interface UserInterface {
   name: string;
   email: string;
   age: number;
-  register();
-  payInvoice();
+  // register();
+  // payInvoice();
 }
 
 class User implements UserInterface {
@@ -39,7 +39,7 @@ class Member extends User {
   }
 
   payInvoice() {
-    super.payInvoice;
+    super.payInvoice();
   }
 }
 
@@ -50,6 +50,6 @@ Nujood.register();
 // this can't be reached out of its class if it was private
 console.log(Nujood.age);
 
-let Mike = new Member(1, "Mike sh3ban", " jsdkjds@gmail.com", 90);
+let Mike: User = new Member(1, "Mike sh3ban", " jsdkjds@gmail.com", 90);
 
 Mike.payInvoice();
